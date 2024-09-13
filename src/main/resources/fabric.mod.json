@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "This is My First Mod!",
+	"authors": [
+		"Jordan!"
+	],
+	"contact": {
+		"homepage": "https://github.com/BluePhoenixJ",
+		"sources": "https://github.com/BluePhoenixJ/tutorialmod"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.phoenix.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.phoenix.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+		"net.phoenix.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
